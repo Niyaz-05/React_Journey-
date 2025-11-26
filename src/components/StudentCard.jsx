@@ -1,9 +1,9 @@
-function StudentCard() {
+function StudentCard({ name, profession, skills }) {
   return (
-    <div>
-      <h2>Niyaz</h2>
-      <p>Frontend Developer</p>
-      <p>Skills: JS, React</p>
+    <div style={{ border: "1px solid black", margin: "10px", padding: "10px" }}>
+      <h2>{name}</h2>
+      <p>{profession}</p>
+      <p>Skills: {skills}</p>
     </div>
   );
 }
