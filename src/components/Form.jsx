@@ -2,8 +2,10 @@ import { useState } from "react";
 
 function Form() {
   const [name,  setName] = useState("Niyaz");
-  const [email ,setEmail]= useState("niyaz@gmail.com")
-  const [age, setAge]=useState()
+  const [email ,setEmail]= useState("niyaz@gmail.com");
+  const [age, setAge]=useState(23);
+  const [address, setAddress]=useState("Nagpur");
+
   const handleSubmit = (e) => {
     e.preventDefault();
     alert("Name: " + name+"\nEmail: "+email+"\nAge: "+age);
@@ -31,7 +33,12 @@ function Form() {
         value={age}
         onChange={(e) => setAge(e.target.value)}
       />
-
+      <input
+      type="text"
+      placeholder="Type your address.."
+      onChange={(e) => setAddress(e.target.value)}
+      />
+    
       <button type="submit">Submit</button>
     </form>
   );

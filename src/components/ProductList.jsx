@@ -1,9 +1,5 @@
 import React, { useState } from 'react'
 
-
-
-
-
 const ProductList = () => {
   const products = [
     { id: 1, name:"Shoes", price:"799"},
