@@ -1,29 +1,29 @@
 import StudentCard from "./components/StudentCard";
-
-function App() {
-  return (
-    <div>
-      <h1>Student List</h1>
-
-      <StudentCard 
-        name="Niyaz" 
-        profession="Frontend Developer" 
-        skills="JS, React" 
-      />
-
-      <StudentCard 
-        name="Kiran" 
-        profession="Backend Developer" 
-        skills="Node, Express" 
-      />
-
-      <StudentCard 
-        name="Hariom" 
-        profession="UI/UX Designer" 
-        skills="Figma, Canva" 
-      />
-    </div>
-  );
+import ProductCard from "./components/ProductCard";
+import Shoes from "./assets/image/productShoes.png"
+import Counter from "./components/Counter";
+import Quote from "./components/Quote";
+import Form from "./components/Form";
+import PropsChildExample from "./components/PropsChildExample";
+import ProductList from "./components/ProductList";
+function App(){
+  return(
+    <>
+      <h1>Welcome</h1>
+      {/* <StudentCard/>
+      <ProductCard 
+          productName="Shoes"
+          price="79,9"
+          rating="4.8"
+          image={Shoes}
+      /> */}
+      {/* <Counter/>
+      <Quote/>
+      <Form/>
+      <PropsChildExample/> */}
+      <ProductList/>
+    </>
+  )
 }
 
 export default App;
