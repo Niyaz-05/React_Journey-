@@ -1,47 +1,45 @@
-import { useState } from "react";
+import React, { useState } from 'react'
 
-function Form() {
-  const [name,  setName] = useState("Niyaz");
-  const [email ,setEmail]= useState("niyaz@gmail.com");
-  const [age, setAge]=useState(23);
-  const [address, setAddress]=useState("Nagpur");
+const Form = () => {
+  const [name, setName]=useState();
+  const [age, setAge]=useState();
+  const [email, setEmail]=useState();
+  const [address, setAddress]=useState();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert("Name: " + name+"\nEmail: "+email+"\nAge: "+age);
-  };
+  const handleSubmit = (e)=>{e.preventDefault();
+    alert("Name: "+name+"\nAge: "+age+"\nEmail: "+email+"\nAddress: "+address)
+  }
+    return (
+      <form onSubmit={handleSubmit}>
+        <h2>Enter Your Data</h2>
+        <input
+          type='text'
+          placeholder='Enter your name...'
+          value={name}
+          onChange={(e)=>setName(e.target.value)}
+        /><br/>
+        <input
+          type='number'
+          placeholder='Enter your age...'
+          value={age}
+          onChange={(e)=>setAge(e.target.value)}
+        /><br/>
+        <input
+          type='email'
+          placeholder='Enter your mail...'
+          value={email}
+          onChange={(e)=>setEmail(e.target.value)}
+        /><br/>
+        <input
+          type='address'
+          placeholder='Enter you address'
+          value={address}
+          onChange={(e)=>setAddress(e.target.value)}
+        /><br/>
+        <button type='submit'>Submit</button>
+      </form>
 
-  return (
-    <form onSubmit={handleSubmit}>
-      <h2>Enter Your Name</h2>
-
-      <input
-        type="text"
-        placeholder="Type your name..."
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
-      <input
-        type="text"
-        placeholder="Enter your email..."
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-      <input
-        type="number"
-        placeholder="Enter Your Age..."
-        value={age}
-        onChange={(e) => setAge(e.target.value)}
-      />
-      <input
-      type="text"
-      placeholder="Type your address.."
-      onChange={(e) => setAddress(e.target.value)}
-      />
-    
-      <button type="submit">Submit</button>
-    </form>
-  );
+  )
 }
 
-export default Form;
+export default Form

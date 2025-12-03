@@ -10,17 +10,17 @@ function App(){
   return(
     <>
       <h1>Welcome</h1>
-      {/* <StudentCard/>
+      <StudentCard/>
       <ProductCard 
           productName="Shoes"
           price="79,9"
           rating="4.8"
           image={Shoes}
-      /> */}
-      {/* <Counter/>
+      /> 
+      <Counter/>
       <Quote/>
       <Form/>
-      <PropsChildExample/> */}
+      <PropsChildExample/>
       <ProductList/>
     </>
   )
