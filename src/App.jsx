@@ -8,6 +8,7 @@ import PropsChildExample from "./components/PropsChildExample";
 import ProductList from "./components/ProductList";
 import { useState } from "react";
 
+
 function App() {
   const [showProducts, setShowProducts] = useState(true);
 
@@ -29,12 +30,15 @@ function App() {
         rating="4.8"
         image={Shoes}
       />
+
       <Counter />
       <Quote />
       <Form />
       <PropsChildExample />
+      
     </>
   );
 }
+
 
 export default App;

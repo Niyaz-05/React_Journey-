@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+    text-align: center;
+    
+}
+
+h1{
+    color: lightseagreen;
+}
+
+#head{
+    color:coral;
+}
+h2{
+    color: black;
+}
+h3{
+    color: black;
+}
+
+#Browse{
+    color: aqua;
+}
+
+.images {
+  display: flex;
+  justify-content: center;   /* center horizontally */
+  gap: 20px;                 /* space between images */
+  margin-top: 20px;
+}
+
+.images img {
+  width: 120px;  
+  height: auto;
+  border-radius: 5px;
+}
+
+p{
+    color:coral;
+}
+
+
